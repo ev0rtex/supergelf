@@ -58,7 +58,7 @@ def main():
     # Log each event
     for headers, event in events(sys.stdin, sys.stdout):
         record = merged(defaults, {
-                'msg': "Event \"{eventname}\" triggered for process \"{processname}\"".format(**merged(headers, event['headers'])),
+                'msg': "Supervisor event: {eventname}".format(**merged(headers, event['headers'])),
                 'data': event['data'],
                 'eventname': headers['eventname']
             },
