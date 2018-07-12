@@ -13,7 +13,7 @@ vim /etc/supervisor/conf.d/logging.conf
 ```
 [eventlistener:supergelf]
 command = /opt/supergelf/log.py
-environment = GRAYLOG_HOST=graylog.deseretdigital.com,GRAYLOG_PORT=12210
+environment = GRAYLOG_HOST=graylog.mysite.com,GRAYLOG_PORT=12201
 events = PROCESS_STATE
 buffer_size = 1024
 ```
